@@ -28,12 +28,24 @@ public class Hooks {
      //   driver = Driver.getDriver();
 
     }
-    @Given("the user should enter app with valid {string} {string} {string}")
-    public void the_user_should_enter_app_with_valid(String url, String username, String password) {
-        Driver.getDriver().get(url);
-        loginPage.login(username,password);
-    }
+    @After
+    public void teardownScenario(Scenario scenario) {
 
+//scenario .is failed------> if scenario failed take screenshot if scenario pass no screenshot
+        if (scenario.isFailed()){
+
+            byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot,"image/png",scenario.getName());
+        }
+
+
+        Driver.closeDriver();
+
+
+        //  System.out.println("====Setting up browser using cucumber @After");
+        //  System.out.println("====Scenario ended/ Take a screenshot if failed!");
+
+    }
 
 
 
