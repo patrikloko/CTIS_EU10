@@ -1,1 +1,1 @@
-*this is a test feature
+Feature: test
