@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="Hook class added updated" />
+    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="SearchBox_Pinar pages created">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SearchBoxPage_Pinar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SearchFilterBox_Steps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SearchBox_Pinar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/new.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/new.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="cemil" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,14 +45,6 @@
         <option name="url" value="https://github.com/patrikloko/CTIS_EU10.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/LoginPage.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/LoginStep.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/utilities/BrowserUtils.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/utilities/ConfigurationReader.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/Login.feature" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +68,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -78,33 +78,14 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CukesRunner">
-    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User should be able to see default filters as" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="GLUE" value="com.ctissolutions.step_definitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CTIS_EU10" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="CTIS_EU10" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
+      <option name="NAME_FILTER" value="^User should be able to see default filters as$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to see default filters as$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to see default filters as" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -134,8 +115,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="Cucumber Java.Scenario: " />
-        <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to see default filters as" />
       </list>
     </recent_temporary>
   </component>
@@ -190,12 +170,12 @@
       <option name="project" value="LOCAL" />
       <updated>1678647266028</updated>
     </task>
-    <task id="LOCAL-00006" summary="Hook class added updated">
-      <created>1679422164065</created>
+    <task id="LOCAL-00006" summary="SearchBox_Pinar pages created">
+      <created>1679334521675</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1679422164065</updated>
+      <updated>1679334521675</updated>
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
@@ -214,7 +194,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="pınar" />
                       </list>
                     </value>
                   </entry>
@@ -231,6 +211,7 @@
     <MESSAGE value="First project is started. &#10;Show must go on." />
     <MESSAGE value="Hook class added" />
     <MESSAGE value="Hook class added updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hook class added updated" />
+    <MESSAGE value="SearchBox_Pinar pages created" />
+    <option name="LAST_COMMIT_MESSAGE" value="SearchBox_Pinar pages created" />
   </component>
 </project>
