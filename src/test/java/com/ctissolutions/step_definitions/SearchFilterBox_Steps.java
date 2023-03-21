@@ -21,6 +21,7 @@ public class SearchFilterBox_Steps {
         searchBoxPage.usernameInput.sendKeys("hr1@cybertekschool.com");
         searchBoxPage.passwordInput.sendKeys("UserUser");
         searchBoxPage.loginButton.click();
+        //cemil login() method will come
 
 
     }
