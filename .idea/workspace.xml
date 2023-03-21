@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="Hook class added updated">
+    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="SearchBox_Pinar pages created">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SearchBoxPage_Pinar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SearchFilterBox_Steps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SearchBox_Pinar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/new.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/new.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +77,48 @@
       <recent name="com.ctissolutions.step_definitions" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.CukesRunner">
+    <configuration name="Scenario: User should be able to see default filters as" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CTIS_EU10" />
+      <option name="NAME_FILTER" value="^User should be able to see default filters as$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to see default filters as$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to see default filters as" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CTIS_EU10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ctissolutions.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ctissolutions.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.ctissolutions.runners.CukesRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to see default filters as" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -122,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678647266028</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="SearchBox_Pinar pages created">
+      <created>1679334521675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679334521675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +194,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="pınar" />
                       </list>
                     </value>
                   </entry>
@@ -156,6 +211,7 @@
     <MESSAGE value="First project is started. &#10;Show must go on." />
     <MESSAGE value="Hook class added" />
     <MESSAGE value="Hook class added updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hook class added updated" />
+    <MESSAGE value="SearchBox_Pinar pages created" />
+    <option name="LAST_COMMIT_MESSAGE" value="SearchBox_Pinar pages created" />
   </component>
 </project>
