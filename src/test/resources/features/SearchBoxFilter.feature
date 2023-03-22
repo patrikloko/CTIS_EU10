@@ -8,7 +8,6 @@ Feature: As a user, I should be able to use "Filter and search" functionality on
 
     Scenario:  User should be able to see default filters as
     "my activity, work, favorites, announcements, and workflows".
-      Given user is on the home page
       When user click on the search-filter box
       Then user should see the buttons
         | WORK          |
@@ -16,9 +15,19 @@ Feature: As a user, I should be able to use "Filter and search" functionality on
         | ANNOUNCEMENTS |
         | WORKFLOWS     |
         | FAVORITES     |
-#
-#  Scenario:  User should be able to add and remove fields
-#      When user click on the search-filter box
-#      And user clicks on the add field
+
+
+   Scenario: User should be able to remove fields
+    When user click on the search-filter box
+    And user clicks on the hide field button
+
+
+   Scenario:  User should be able to add fields
+     When user click on the search-filter box
+     And user sees "add field" and clicks on it
+     Then user adds the field
+
+
+
 
 
