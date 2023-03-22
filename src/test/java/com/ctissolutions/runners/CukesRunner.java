@@ -12,10 +12,10 @@ import org.junit.runner.*;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
         },
-      features = "/Users/cemil/IdeaProjects/CTIS_EU10/src/test/resources/features/Login.feature",
+      features = "/Users/cemil/IdeaProjects/CTIS_EU10/src/test/resources/features/SearchBoxFilter.feature",
         glue = "com/ctissolutions/step_definitions",
         dryRun = false,
-        tags = "@login",
+        tags = "@wip",
         publish = false
 
 )
