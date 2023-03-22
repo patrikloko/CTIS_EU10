@@ -20,7 +20,6 @@ In the class we will be able to pass pre- & post- conditions to
 public class Hooks {
     LoginPage loginPage;
     LogoutPage logoutPage;
-    WebDriver driver;
 
     @Before(value = "@loginFeature", order = 1)
     public void setUp() {
