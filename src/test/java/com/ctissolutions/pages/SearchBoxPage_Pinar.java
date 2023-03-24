@@ -50,15 +50,8 @@ public class SearchBoxPage_Pinar {
     @FindBy(xpath = "//div[@data-name='TAG']/div[2]/span")
     public WebElement removeTagField;
 
-    @FindBy(name = "USER_LOGIN")
-    public WebElement usernameInput;
-
-    @FindBy(name = "USER_PASSWORD")
-    public WebElement passwordInput;
-
-    @FindBy(xpath = "//input[@type='submit']")
-    public WebElement loginButton;
-
+    @FindBy(xpath = "//span[@title='Hide field']")
+    public List<WebElement> removeFieldButton;
 
 
 }
