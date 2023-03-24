@@ -21,7 +21,7 @@ public class Hooks {
     LoginPage loginPage;
     LogoutPage logoutPage;
 
-    @Before(value = "@loginFeature", order = 1)
+    @Before
     public void setUp() {
         loginPage = new LoginPage();
         logoutPage = new LogoutPage();
