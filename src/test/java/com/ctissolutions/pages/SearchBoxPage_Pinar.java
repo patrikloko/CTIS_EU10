@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
+import java.util.Map;
 
 public class SearchBoxPage_Pinar {
 
@@ -38,6 +39,9 @@ public class SearchBoxPage_Pinar {
     @FindBy(xpath = "//span[.='Add field']")
     public WebElement AddField;
 
+    @FindBy(xpath = "//span[.='Restore default fields']")
+    public WebElement defaultFields;
+
     @FindBy(xpath = "//div[@data-id='field_FAVORITES_USER_ID']")
     public WebElement AddFieldFavorites;
 
@@ -52,6 +56,16 @@ public class SearchBoxPage_Pinar {
 
     @FindBy(xpath = "//span[@title='Hide field']")
     public List<WebElement> removeFieldButton;
+
+    @FindBy(xpath = "//div[@data-name='DATE_CREATE_datesel']")
+    public WebElement dateDropdown;
+
+    @FindBy(xpath = "(//div[.='This week'])[last()]")
+    public WebElement dateThisWeek;
+
+    @FindBy(xpath ="//span[@class='main-ui-item-icon main-ui-search']")
+    public WebElement searchButton;
+
 
 
 }
