@@ -73,7 +73,7 @@ public class SearchFilterBox_Steps {
     }
 
     @And("user sees {string} and clicks on it")
-    public void user_sees_and_clicks_on_it(String string) {
+    public void user_sees_and_clicks_on_it(String AddField) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
         wait.until(ExpectedConditions.visibilityOf(searchBoxPage.AddField));
         searchBoxPage.AddField.click();
@@ -88,6 +88,31 @@ public class SearchFilterBox_Steps {
             searchBoxPage.AddFieldFavorites.click();
             searchBoxPage.AddFieldTag.click();
     }
+
+    @When("user click {string}")
+    public void user_click(String string) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.elementToBeClickable(searchBoxPage.defaultFields));
+        searchBoxPage.defaultFields.click();
+    }
+
+
+    @When("user select a date option {string}")
+    public void user_select_a_date_option(String string) {
+
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.elementToBeClickable(searchBoxPage.dateDropdown));
+        searchBoxPage.dateDropdown.click();
+        searchBoxPage.dateThisWeek.click();
+
+    }
+    @Then("user click on search button")
+    public void user_click_on_search_button() throws InterruptedException {
+        Thread.sleep(3000);
+
+        searchBoxPage.searchButton.click();
+    }
+
 
 
 }
