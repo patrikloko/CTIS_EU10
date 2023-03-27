@@ -66,6 +66,35 @@ public class SearchBoxPage_Pinar {
     @FindBy(xpath ="//span[@class='main-ui-item-icon main-ui-search']")
     public WebElement searchButton;
 
+    @FindBy(xpath = "//div[@class='main-ui-select-inner-label'][text()='Posts']")
+    public WebElement postsType;
+
+    @FindBy(xpath = "//div[@class='main-ui-control main-ui-multi-select']")
+    public WebElement typeInputBox;
+
+    @FindBy(xpath = "//div[@class='main-ui-select-inner-label'][text()='Announcements']")
+    public WebElement announcementsType;
+
+    @FindBy(xpath = "//div[@class='main-ui-select-inner-label'][text()='Polls']")
+    public WebElement pollsType;
+
+    @FindBy(xpath = "//div[@class='main-ui-select-inner-label'][text()='Tasks']")
+    public WebElement tasksType;
+
+    @FindBy(xpath = "//span[@class='main-ui-filter-add-item']")
+    public WebElement saveFilter;
+
+    @FindBy(xpath = "//input[@class='main-ui-filter-sidebar-edit-control']")
+    public WebElement filterNameInput;
+
+    @FindBy(xpath = "//span[@class='ui-btn ui-btn-success main-ui-filter-field-button main-ui-filter-save']")
+    public WebElement saveButton;
+
+
+
+
+
+
 
 
 }
