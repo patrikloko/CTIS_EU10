@@ -45,7 +45,6 @@ public class EventPage_Armel {
     @FindBy (xpath = "//input[@name ='TIME_FROM_' ]")
     public WebElement startTimeBox;
 
-
     @FindBy (xpath = "//input[@id='feed-cal-event-tocal_3Jcl']")
     public WebElement endDateBox;
 

@@ -20,7 +20,6 @@ import java.util.Date;
 
 public class EventStep {
 
-
     EventPage_Armel eventPageArmel;
     WebDriver driver;
 
