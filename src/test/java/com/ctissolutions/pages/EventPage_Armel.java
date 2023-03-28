@@ -27,6 +27,7 @@ public class EventPage_Armel {
 
 
     public EventPage_Armel(){
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
