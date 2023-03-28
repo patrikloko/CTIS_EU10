@@ -27,7 +27,6 @@ public class EventStep {
     public void setup(){
         eventPageArmel = new EventPage_Armel();
         driver = Driver.getDriver();
-        //aasdas
     }
 
 
