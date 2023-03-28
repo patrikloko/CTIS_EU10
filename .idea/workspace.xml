@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="Hook class added updated">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SendMessagesPage_Busra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SendMessage_Busra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SendMessageBusra.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/EventPage_Armel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Event.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/LoginStep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,14 +87,46 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CukesRunner">
-    <configuration name="Scenario: User should be able to see default filters as" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="EventPage_Armel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ctissolutions.pages.EventPage_Armel" />
+      <module name="CTIS_EU10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ctissolutions.pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: Event" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Event.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CTIS_EU10" />
-      <option name="NAME_FILTER" value="^User should be able to see default filters as$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to see default filters as$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User should be able to see default filters as" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Event" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User should be able to cancel sending event at any time before sending" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Event.feature" />
+      <option name="GLUE" value="com.ctissolutions.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CTIS_EU10" />
+      <option name="NAME_FILTER" value="^User should be able to cancel sending event at any time before sending$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to cancel sending event at any time before sending$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to cancel sending event at any time before sending" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -121,10 +153,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FailedTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CTIS_EU10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ctissolutions.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ctissolutions.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.ctissolutions.runners.FailedTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="Cucumber Java.Scenario: User should be able to see default filters as" />
+        <item itemvalue="JUnit.FailedTestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to cancel sending event at any time before sending" />
+        <item itemvalue="Application.EventPage_Armel" />
+        <item itemvalue="Cucumber Java.Feature: Event" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +200,10 @@
       <workItem from="1679607608706" duration="3756000" />
       <workItem from="1679650622333" duration="3027000" />
       <workItem from="1679657693791" duration="938000" />
+      <workItem from="1679864124890" duration="4314000" />
+      <workItem from="1679917720422" duration="4689000" />
+      <workItem from="1680006126833" duration="735000" />
+      <workItem from="1680006871900" duration="10417000" />
     </task>
     <task id="LOCAL-00001" summary="First project started">
       <created>1678483094131</created>
@@ -229,5 +283,16 @@
     <MESSAGE value="Hook class added updated" />
     <MESSAGE value="SearchBox_Pinar pages created" />
     <option name="LAST_COMMIT_MESSAGE" value="SearchBox_Pinar pages created" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
