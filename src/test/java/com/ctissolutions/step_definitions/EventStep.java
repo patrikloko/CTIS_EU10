@@ -20,15 +20,12 @@ import java.util.Date;
 
 public class EventStep {
 
-    LoginPage loginPage;
-    LogoutPage logoutPage;
+
     EventPage_Armel eventPageArmel;
     WebDriver driver;
 
     @Before(value = "@Event", order = 2)
     public void setup(){
-        loginPage = new LoginPage();
-        logoutPage = new LogoutPage();
         eventPageArmel = new EventPage_Armel();
         driver = Driver.getDriver();
     }
