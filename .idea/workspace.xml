@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="Hook class added updated">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/EventPage_Armel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Event.feature" afterDir="false" />
+    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="Event page &amp; event step added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679334521675</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Hook class added updated">
+      <created>1680031299340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680031299340</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Event page &amp; event step added">
+      <created>1680031719108</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680031719108</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,19 +268,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="Busra" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -280,16 +298,17 @@
     <MESSAGE value="First project started" />
     <MESSAGE value="First project is started. &#10;Show must go on." />
     <MESSAGE value="Hook class added" />
-    <MESSAGE value="Hook class added updated" />
     <MESSAGE value="SearchBox_Pinar pages created" />
-    <option name="LAST_COMMIT_MESSAGE" value="SearchBox_Pinar pages created" />
+    <MESSAGE value="Hook class added updated" />
+    <MESSAGE value="Event page &amp; event step added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event page &amp; event step added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java</url>
-          <line>47</line>
+          <line>44</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
