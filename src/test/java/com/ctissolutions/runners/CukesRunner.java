@@ -15,8 +15,8 @@ import org.junit.runner.*;
       features = "src/test/resources/features",
         glue = "com/ctissolutions/step_definitions",
         dryRun = false,
-        tags = "@sendMessage",
-        publish = false
+        tags = "@wip"
+      //  publish = false
 
 )
 public class CukesRunner {
