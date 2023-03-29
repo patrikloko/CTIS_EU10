@@ -1,5 +1,5 @@
 @loginFeature
-@wip
+
 Feature: As a user, I should be able to use "Filter and search" functionality on Active Stream.
 
   Background:

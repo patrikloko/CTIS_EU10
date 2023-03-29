@@ -86,7 +86,7 @@ public class Driver {
                     break;
             }
         }
-
+        driver.manage().window().maximize();
         return driver;
     }
 
