@@ -2,10 +2,13 @@ package com.ctissolutions.pages;
 
 import com.ctissolutions.utilities.Driver;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -13,24 +16,10 @@ import java.util.Date;
 public class EventPage_Armel {
 
 
-    public void verifyStartDate() {
-
-        String actualStartDate = startDateBox.getText();
-        String actualEndDate = endDateBox.getText();
-
-        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-        Date date = new Date();
-        String expectedDate = dateFormat.format(date);
-
-        Assert.assertEquals(expectedDate, actualStartDate);
-    }
-
-
     public EventPage_Armel(){
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
 
     @FindBy(xpath = "//*[@id=\"bx_left_menu_menu_live_feed\"]/a/span[1]")
     public WebElement activityStream;
@@ -41,8 +30,6 @@ public class EventPage_Armel {
 
     @FindBy (xpath = "//input[@id = 'feed-cal-event-fromcal_3Jcl']")
     public WebElement startDateBox;
-    @FindBy (xpath = "//a[@class='bx-calendar-cell bx-calendar-weekend bx-calendar-active']")
-    public WebElement startDateBox2;
     @FindBy (xpath = "//input[@name ='TIME_FROM_' ]")
     public WebElement startTimeBox;
 
@@ -77,5 +64,47 @@ public class EventPage_Armel {
     @FindBy (xpath = "//span[@class='feed-add-post-micro-title']")
     public WebElement messagePage;
 
+    public void verifyStartandEndDate() throws InterruptedException {
+
+
+        WebDriver driver;
+        Date todaysDate = new Date();
+        driver = Driver.getDriver();
+        WebElement actualStartDateEle = startDateBox;
+        WebElement actualEndDateEle = endDateBox;
+
+        //VERİFY START DATE
+        actualStartDateEle.click();
+        Thread.sleep(1000);
+        String activeStartDayTs = driver.findElement(By.xpath("//a[@class='bx-calendar-cell bx-calendar-active']")).getAttribute("data-date");
+        //Thread.sleep(1000);
+        long convertedStartLongTs = Long.parseLong(activeStartDayTs);
+
+        Timestamp starDateTs=new Timestamp(convertedStartLongTs);
+        Date convertedStartDate =starDateTs;
+        DateFormat startDateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        String actualStartDate = startDateFormat.format(convertedStartDate);
+        System.out.println("actualStartDate = " + actualStartDate);
+
+        String expectedDate = startDateFormat.format(todaysDate);
+        Assert.assertEquals(expectedDate, actualStartDate);
+
+        //VERİFY END DATE
+        actualEndDateEle.click();
+        Thread.sleep(1000);
+        String activeEndDayTs = driver.findElement(By.xpath("//a[@class='bx-calendar-cell bx-calendar-active']")).getAttribute("data-date");
+        //Thread.sleep(1000);
+        long convertedEndLongTs = Long.parseLong(activeEndDayTs);
+
+        Timestamp endDateTs = new Timestamp(convertedEndLongTs);
+        Date convertedDate = endDateTs;
+        DateFormat EndDateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        String actualEndDate = EndDateFormat.format(convertedDate);
+        System.out.println("actualEndDate = " + actualEndDate);
+
+        Assert.assertEquals(expectedDate, actualEndDate);
+
+
+    }
 
 }
