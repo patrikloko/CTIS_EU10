@@ -7,11 +7,10 @@ Feature:As a user, I should be able to create events by clicking on Event tab un
     And user should click the Activity Stream button
     And user should click the Event tab
 
-
     Scenario: User should be able to sees today's date as default for starting date and ending
       Then user should sees today's as default for starting date and ending
 
-  @ini
+
     Scenario: User should be able to add starting and ending date and time
        When user should add starting date
        When user should add starting time

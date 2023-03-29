@@ -64,19 +64,23 @@ public class EventPage_Armel {
     @FindBy (xpath = "//span[@class='feed-add-post-micro-title']")
     public WebElement messagePage;
 
+    @FindBy (xpath = "//a[@class='bx-calendar-cell bx-calendar-active']")
+    public WebElement calendarStartingDate;
+
+    @FindBy (xpath = "//a[@class='bx-calendar-cell bx-calendar-active']")
+    public WebElement calendarEndingDate;
+
     public void verifyStartandEndDate() throws InterruptedException {
 
 
-        WebDriver driver;
         Date todaysDate = new Date();
-        driver = Driver.getDriver();
         WebElement actualStartDateEle = startDateBox;
         WebElement actualEndDateEle = endDateBox;
 
         //VERİFY START DATE
         actualStartDateEle.click();
         Thread.sleep(1000);
-        String activeStartDayTs = driver.findElement(By.xpath("//a[@class='bx-calendar-cell bx-calendar-active']")).getAttribute("data-date");
+        String activeStartDayTs = calendarStartingDate.getAttribute("data-date");
         //Thread.sleep(1000);
         long convertedStartLongTs = Long.parseLong(activeStartDayTs);
 
@@ -92,7 +96,7 @@ public class EventPage_Armel {
         //VERİFY END DATE
         actualEndDateEle.click();
         Thread.sleep(1000);
-        String activeEndDayTs = driver.findElement(By.xpath("//a[@class='bx-calendar-cell bx-calendar-active']")).getAttribute("data-date");
+        String activeEndDayTs = calendarEndingDate.getAttribute("data-date");
         //Thread.sleep(1000);
         long convertedEndLongTs = Long.parseLong(activeEndDayTs);
 

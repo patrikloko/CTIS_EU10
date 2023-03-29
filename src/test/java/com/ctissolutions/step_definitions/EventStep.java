@@ -105,12 +105,14 @@ public class EventStep {
 
     @When("user should add event name")
     public void user_should_add_event_name() {
+
         eventPageArmel.eventNameField.sendKeys("Event 1");
     }
 
     @When("user should click send button")
     public void user_should_click_send_button() {
-       eventPageArmel.sendButton.click();
+
+        eventPageArmel.sendButton.click();
     }
 
     @Then("user should sees event sent on message page")
