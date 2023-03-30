@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="Event page &amp; event step added">
+    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="0c9d201726874c81b02efb0adf0db4e36ac44295" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,20 +35,15 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="85ba2370-49ee-435d-93e8-94788f39704a" />
+        <option name="accountId" value="b16d58b4-c39d-4a61-a4e1-f8cc775e634d" />
         <option name="url" value="https://github.com/patrikloko/CTIS_EU10.git" />
       </UrlAndAccount>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/LoginPage.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/LoginStep.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SearchFilterBox_Steps.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/utilities/BrowserUtils.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/utilities/ConfigurationReader.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/Login.feature" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,19 +77,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CukesRunner">
-    <configuration name="EventPage_Armel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ctissolutions.pages.EventPage_Armel" />
-      <module name="CTIS_EU10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ctissolutions.pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Feature: Event" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Event.feature" />
@@ -123,6 +104,25 @@
       <option name="NAME_FILTER" value="^User should be able to cancel sending event at any time before sending$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to cancel sending event at any time before sending$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User should be able to cancel sending event at any time before sending" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User should be able to see default filters as" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CTIS_EU10" />
+      <option name="NAME_FILTER" value="^User should be able to see default filters as$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to see default filters as$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User should be able to see default filters as" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -166,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Scenario: User should be able to see default filters as" />
         <item itemvalue="JUnit.FailedTestRunner" />
         <item itemvalue="JUnit.CukesRunner" />
         <item itemvalue="Cucumber Java.Scenario: User should be able to cancel sending event at any time before sending" />
-        <item itemvalue="Cucumber Java.Feature: Event" />
-        <item itemvalue="Application.EventPage_Armel" />
       </list>
     </recent_temporary>
   </component>
@@ -257,22 +257,20 @@
       <option name="project" value="LOCAL" />
       <updated>1680031719108</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Event page &amp; event step added-erdal">
+      <created>1680207699555</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680207699555</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -293,6 +291,15 @@
         </entry>
       </map>
     </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First project started" />
@@ -301,17 +308,7 @@
     <MESSAGE value="SearchBox_Pinar pages created" />
     <MESSAGE value="Hook class added updated" />
     <MESSAGE value="Event page &amp; event step added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Event page &amp; event step added" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/EventStep.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Event page &amp; event step added-erdal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event page &amp; event step added-erdal" />
   </component>
 </project>
