@@ -15,7 +15,7 @@ import org.junit.runner.*;
       features = "src/test/resources/features",
         glue = "com/ctissolutions/step_definitions",
         dryRun = false,
-        tags = "@sendMessage",
+        tags = "@ini",
         publish = false
 
 )

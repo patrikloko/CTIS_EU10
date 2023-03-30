@@ -11,7 +11,8 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-public class LoginStep {
+public class
+LoginStep {
 
     LoginPage loginPage;
     LogoutPage logoutPage;

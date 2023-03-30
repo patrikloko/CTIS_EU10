@@ -26,7 +26,6 @@ public class Hooks {
         loginPage = new LoginPage();
         logoutPage = new LogoutPage();
 
-
     }
 
     @After
