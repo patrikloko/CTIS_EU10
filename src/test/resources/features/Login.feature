@@ -16,7 +16,7 @@ Feature: Testing Ctissolutions application login functionality
 #    And the user should click Log in button
 #    Then the system should Log in succesfully
 #    Then the user should Log out succesfully
-#     Hello Erdal-Again Erdal
+#     Hello Erdal-Again Erdal-Againnn
 #
 #  Scenario:
 #    Given the user should navigate URL "https://qa.ctissolutions.com/"
