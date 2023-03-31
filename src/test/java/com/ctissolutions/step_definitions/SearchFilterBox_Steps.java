@@ -193,13 +193,23 @@ public class SearchFilterBox_Steps {
     public void verify_default_fields_are_restored(List<String> expectedDefaultFfields) {
 
         List<String> actualDefaults = new ArrayList<>();
-        for (WebElement defaultField : searchBoxPage.defaultFieldsNames){
-             actualDefaults.add(defaultField.getText());
+        for (WebElement defaultField : searchBoxPage.defaultFieldsNames) {
+            actualDefaults.add(defaultField.getText());
         }
-        Assert.assertEquals(expectedDefaultFfields,actualDefaults);
-
-
+        Assert.assertEquals(expectedDefaultFfields, actualDefaults);
     }
+
+        @When("user click reset button")
+        public void user_click_reset_button() {
+                searchBoxPage.resetButton.click();
+        }
+        @Then("verify filters are resetted")
+        public void verify_filters_are_resetted() {
+               searchBoxPage.searchBox.click();
+               Assert.assertEquals("Any date",searchBoxPage.anyDateDefault.getText());
+        }
+
+
 
 
 
