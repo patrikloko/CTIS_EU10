@@ -58,8 +58,8 @@ Feature: As a user, I should be able to use "Filter and search" functionality on
   Scenario: User saves the filter
     When user clicks on the search-filter box
     And user clicks on "save Filter"
-    And user writes a filter name "GROUPS"
-    Then user clicks save button
+    And user writes a filter name "GROUPS" and clicks save button
+    Then verify new filter is saved
 
 
   @CTIS_EU10 @CTS10-279
