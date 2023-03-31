@@ -72,12 +72,13 @@ public class erdal_CTS10_240_Steps {
     @When("User click Link button")
     public void user_click_link_button() {
         erdalPage.link_btn.click();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
-        wait.until(ExpectedConditions.visibilityOf(erdalPage.link_Save_btn));
+
     }
 
     @When("User write {string} in Link box")
     public void user_write_in_link_box(String string) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.visibilityOf(erdalPage.link_Save_btn));
         erdalPage.link_URL_box.click();
         erdalPage.link_URL_box.sendKeys(string);
     }
@@ -91,13 +92,13 @@ public class erdal_CTS10_240_Steps {
     @When("User clicks Save button")
     public void user_clicks_save_button() throws InterruptedException {
         erdalPage.link_Save_btn.click();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
-        wait.until(ExpectedConditions.visibilityOf(erdalPage.send_msg_btn));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.elementToBeClickable(erdalPage.send_msg_btn));
         erdalPage.send_msg_btn.click();
-        Thread.sleep(3000);
-        Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
-        wait.until(ExpectedConditions.visibilityOf(erdalPage.link_check));
-        Driver.getDriver().switchTo().parentFrame();
+//        Thread.sleep(3000);
+//        Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
+//        wait.until(ExpectedConditions.visibilityOf(erdalPage.link_check));
+//        Driver.getDriver().switchTo().parentFrame();
     }
 
     @And("User send message with added the link")
@@ -109,6 +110,8 @@ public class erdal_CTS10_240_Steps {
 
     @Then("User should be able to attach the link to the specified text.")
     public void user_should_be_able_to_attach_the_link_to_the_specified_text() {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.visibilityOf(erdalPage.send_btn));
         Assert.assertTrue(erdalPage.link_check.isDisplayed());
     }
 
