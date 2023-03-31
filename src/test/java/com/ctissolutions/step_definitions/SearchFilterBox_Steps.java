@@ -167,11 +167,12 @@ public class SearchFilterBox_Steps {
         Assert.assertEquals(expectedSearchBoxTitle,actualSearchBoxTitle);
     }
 
-    @When("user clicks on save Filter")
-    public void user_clicks_on() {
+    @When("user clicks on {string}")
+    public void user_clicks_on(String string) {
         BrowserUtils.waitFor(5);
         searchBoxPage.saveFilter.click();
     }
+
     @When("user writes a filter name {string} and clicks save button")
     public void user_writes_a_filter_name_user_clicks_save_button(String string) {
         searchBoxPage.filterNameInput.sendKeys("GROUPS");
