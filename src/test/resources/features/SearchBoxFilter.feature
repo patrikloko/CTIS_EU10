@@ -71,3 +71,10 @@ Feature: As a user, I should be able to use "Filter and search" functionality on
       | Type   |
       | Author |
       | To     |
+
+  @CTIS_EU10 @CTS10-280
+    Scenario: User resets filters to default
+    When user clicks on the search-filter box
+    And user selects a date option "This Week"
+    And user click reset button
+    Then verify filters are resetted
