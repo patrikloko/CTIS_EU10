@@ -112,5 +112,9 @@ public class SearchBoxPage_Pinar {
     @FindBy(xpath = "//span[@class='main-ui-control-field-label']")
     public List<WebElement> defaultFieldsNames;
 
+    @FindBy(xpath = "//span[@class='ui-btn ui-btn-light-border main-ui-filter-field-button main-ui-filter-reset']")
+    public WebElement resetButton;
 
+    @FindBy(xpath = "//span[@class='main-ui-select-name']")
+    public WebElement anyDateDefault;
 }

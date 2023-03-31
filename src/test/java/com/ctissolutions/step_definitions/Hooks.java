@@ -39,7 +39,7 @@ public class Hooks {
         }
 
 
-        Driver.closeDriver();
+       Driver.closeDriver();
     }
 
         @Given("the user should enter app with valid {string} {string} {string}")
