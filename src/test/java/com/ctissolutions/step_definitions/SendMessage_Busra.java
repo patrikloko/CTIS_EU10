@@ -46,14 +46,19 @@ public class SendMessage_Busra {
     public void user_writes_message() throws InterruptedException {
         Thread.sleep(5000);
         Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
-        sendMessagesPageBusra.messageField.sendKeys("hello");
+        sendMessagesPageBusra.messageField.sendKeys("hello11");
         Driver.getDriver().switchTo().parentFrame();
     }
 
-    @Then("user clicks the send button")
+    @When("user clicks the send button")
     public void user_clicks_the_send_button() throws InterruptedException {
         Thread.sleep(3000);
         sendMessagesPageBusra.sendButton.click();
+    }
+
+    @Then("users should see the their message")
+    public void users_should_see_the_their_message() {
+        sendMessagesPageBusra.sendingMessageForEveryone.isDisplayed();
     }
 
 
@@ -105,7 +110,7 @@ public class SendMessage_Busra {
     public void user_writes_messages() throws InterruptedException {
         Thread.sleep(5000);
         Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
-        sendMessagesPageBusra.messageField.sendKeys("hello3");
+        sendMessagesPageBusra.messageField.sendKeys("hello33");
         Driver.getDriver().switchTo().parentFrame();
     }
 
@@ -116,7 +121,7 @@ public class SendMessage_Busra {
 
     }
 
-    @Then("user remove default and add new more than one, changeable")
+    @When("user remove default and add new more than one, changeable")
     public void user_remove_default_and_add_new_more_than_one_changeable() throws InterruptedException {
         Thread.sleep(2000);
         sendMessagesPageBusra.getAllEmployeesRemoveButton.click();
@@ -128,15 +133,31 @@ public class SendMessage_Busra {
         sendMessagesPageBusra.addAnotherRecipents.click();
     }
 
+    @Then("users should see adding employees")
+    public void users_should_see_adding_employees() {
+        sendMessagesPageBusra.addingOtherEmployees.isDisplayed();
+    }
 
 
 
 
 
-    @Then("user clicks the cancel button")
+
+
+
+
+    @When("user clicks the cancel button")
     public void user_clicks_the_cancel_button() {
         sendMessagesPageBusra.cancelButton.click();
     }
+    @Then("users should see their empty messages field")
+    public void users_should_see_their_empty_messages_field() {
+        Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
+        Assert.assertTrue(sendMessagesPageBusra.messageField.isDisplayed());
+        Driver.getDriver().switchTo().parentFrame();
+
+    }
+
 
 
 
@@ -147,7 +168,7 @@ public class SendMessage_Busra {
     public void user_writes_the_message() throws InterruptedException {
         Thread.sleep(5000);
         Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
-        sendMessagesPageBusra.messageField.sendKeys("hello2");
+        sendMessagesPageBusra.messageField.sendKeys("hello22");
         Driver.getDriver().switchTo().parentFrame();
     }
 
@@ -159,7 +180,7 @@ public class SendMessage_Busra {
         sendMessagesPageBusra.deleteButtonUnderMore.click();
 
 
-        //mes.isdisplayed yaz
+
     }
 
 }

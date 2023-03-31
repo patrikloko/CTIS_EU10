@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="Hook class added updated">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SendMessagesPage_Busra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SendMessage_Busra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SendMessageBusra.feature" afterDir="false" />
+    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SendMessagesPage_Busra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/SendMessagesPage_Busra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SendMessage_Busra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SendMessage_Busra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SendMessageBusra.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SendMessageBusra.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +31,29 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN",
+      "reviewState": "REVIEWED_BY_ME"
+    },
+    {
+      "state": "OPEN",
+      "reviewState": "REVIEWED_BY_ME",
+      "author": "hkm66"
+    },
+    {
+      "author": "pinaraksoy"
+    }
+  ],
+  "lastFilter": {
+    "author": "pinaraksoy"
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="85ba2370-49ee-435d-93e8-94788f39704a" />
+        <option name="accountId" value="b108f660-0394-4218-a6a5-b9f9b487e45a" />
         <option name="url" value="https://github.com/patrikloko/CTIS_EU10.git" />
       </UrlAndAccount>
     </option>
@@ -149,7 +162,10 @@
       <workItem from="1679604658869" duration="2044000" />
       <workItem from="1679607608706" duration="3756000" />
       <workItem from="1679650622333" duration="3027000" />
-      <workItem from="1679657693791" duration="938000" />
+      <workItem from="1679657693791" duration="2293000" />
+      <workItem from="1679677419256" duration="545000" />
+      <workItem from="1679939675205" duration="575000" />
+      <workItem from="1680171892000" duration="6668000" />
     </task>
     <task id="LOCAL-00001" summary="First project started">
       <created>1678483094131</created>
@@ -193,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679334521675</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Hook class added updated">
+      <created>1679658811177</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679658811177</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,8 +249,8 @@
     <MESSAGE value="First project started" />
     <MESSAGE value="First project is started. &#10;Show must go on." />
     <MESSAGE value="Hook class added" />
-    <MESSAGE value="Hook class added updated" />
     <MESSAGE value="SearchBox_Pinar pages created" />
-    <option name="LAST_COMMIT_MESSAGE" value="SearchBox_Pinar pages created" />
+    <MESSAGE value="SendMessage commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="SendMessage commit" />
   </component>
 </project>

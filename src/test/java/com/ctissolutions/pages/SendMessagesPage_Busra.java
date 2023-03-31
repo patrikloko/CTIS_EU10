@@ -63,6 +63,13 @@ public class SendMessagesPage_Busra {
     @FindBy(xpath = "//a[@id='destEmailTab_rdL6v2']")
     public WebElement emailUsers;
 
+  @FindBy (xpath="(//div[@class='feed-post-text-block'])[1]")
+    public WebElement sendingMessageForEveryone;
 
 
+  @FindBy (xpath="//span[@id='feed-add-post-destination-item']")
+    public WebElement addingOtherEmployees;
+
+  @FindBy (xpath="//body[@style='min-height: 184px;']")
+    public WebElement messageFieldToProveAfterCancel;
 }
