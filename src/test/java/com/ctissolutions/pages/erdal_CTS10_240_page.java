@@ -16,8 +16,6 @@ public class erdal_CTS10_240_page {
     @FindBy(id = "microoPostFormLHE_blogPostForm_inner")
     public WebElement sendMessageTextArea;
 
-    @FindBy(id = "blog-submit-button-save")
-    public WebElement send_msg_btn;
 
     @FindBy(id = "bx-b-mention-blogPostForm")
     public WebElement add_Mention_btn;
@@ -37,7 +35,7 @@ public class erdal_CTS10_240_page {
     @FindBy(id = "linkidPostFormLHE_blogPostForm-text")
     public WebElement link_Text_box;
 
-    @FindBy(id = "undefined")
+    @FindBy(xpath = "//*[@id='undefined']")
     public WebElement link_Save_btn;
 
     @FindBy(linkText = "test2")

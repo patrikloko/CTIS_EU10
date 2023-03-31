@@ -1,4 +1,5 @@
 @loginFeature
+  @login
 @wip
 @CTS10-299 @CRM
 Feature: Add and delete mentions,attach a link,insert and delete video,add tag features
@@ -21,7 +22,7 @@ Feature: Add and delete mentions,attach a link,insert and delete video,add tag f
     And User write "https://my.cydeo.com/apps" in Link box
     And User write "test2" in Text box
     And User clicks Save button
-    And User send message with added the link
+    And User send message with the added link
     Then  User should be able to attach the link to the specified text.
 
   @CTS10-294 @CRM

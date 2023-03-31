@@ -39,7 +39,7 @@ public class erdal_CTS10_240_Steps {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.elementToBeClickable(erdalPage.sendMessageTextArea));
         erdalPage.sendMessageTextArea.click();
-        wait.until(ExpectedConditions.visibilityOf(erdalPage.send_msg_btn));
+        wait.until(ExpectedConditions.visibilityOf(erdalPage.send_btn));
     }
 
     @When("User click Add mention button")
@@ -92,17 +92,11 @@ public class erdal_CTS10_240_Steps {
     @When("User clicks Save button")
     public void user_clicks_save_button() throws InterruptedException {
         erdalPage.link_Save_btn.click();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-        wait.until(ExpectedConditions.elementToBeClickable(erdalPage.send_msg_btn));
-        erdalPage.send_msg_btn.click();
-//        Thread.sleep(3000);
-//        Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
-//        wait.until(ExpectedConditions.visibilityOf(erdalPage.link_check));
-//        Driver.getDriver().switchTo().parentFrame();
+
     }
 
-    @And("User send message with added the link")
-    public void userSendMessageWithAddedTheLink() {
+    @And("User send message with the added link")
+    public void userSendMessageWithTheAddedLink() {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
         wait.until(ExpectedConditions.elementToBeClickable(erdalPage.send_btn));
         erdalPage.send_btn.click();
@@ -111,7 +105,7 @@ public class erdal_CTS10_240_Steps {
     @Then("User should be able to attach the link to the specified text.")
     public void user_should_be_able_to_attach_the_link_to_the_specified_text() {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-        wait.until(ExpectedConditions.visibilityOf(erdalPage.send_btn));
+        wait.until(ExpectedConditions.visibilityOf(erdalPage.link_check));
         Assert.assertTrue(erdalPage.link_check.isDisplayed());
     }
 
@@ -183,6 +177,8 @@ public class erdal_CTS10_240_Steps {
 
     @Then("User should be able to add tags to messages")
     public void user_should_be_able_to_add_tags_to_messages() {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.visibilityOf(erdalPage.add_Tag_check));
         Assert.assertTrue(erdalPage.add_Tag_check.isDisplayed());
     }
 
@@ -225,7 +221,7 @@ public class erdal_CTS10_240_Steps {
         erdalPage.link_Text_box.sendKeys(text);
 
         erdalPage.link_Save_btn.click();
-        erdalPage.send_msg_btn.click();
+        erdalPage.send_btn.click();
         Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
         wait.until(ExpectedConditions.visibilityOf(erdalPage.link_check));
 
