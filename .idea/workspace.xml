@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="pnr">
+    <list default="true" id="1c59b79f-a24d-4b01-9e3d-21f0a791b617" name="Changes" comment="I fixed bugs-2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SearchFilterBox_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SearchFilterBox_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +35,15 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="85ba2370-49ee-435d-93e8-94788f39704a" />
+        <option name="accountId" value="b16d58b4-c39d-4a61-a4e1-f8cc775e634d" />
         <option name="url" value="https://github.com/patrikloko/CTIS_EU10.git" />
       </UrlAndAccount>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/pages/LoginPage.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/runners/CukesRunner.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/LoginStep.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/step_definitions/SearchFilterBox_Steps.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/utilities/BrowserUtils.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/com/ctissolutions/utilities/ConfigurationReader.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/Login.feature" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,15 +77,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CukesRunner">
-    <configuration name="Scenario: User should be able to reset filters to default" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add link" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/erdal-CTS10-240.feature" />
       <option name="GLUE" value="com.ctissolutions.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CTIS_EU10" />
-      <option name="NAME_FILTER" value="^User should be able to reset filters to default$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to reset filters to default$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User should be able to reset filters to default" />
+      <option name="NAME_FILTER" value="^Add link$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add link$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add link" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +97,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User should be able to see default filters as" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add mentions" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchBoxFilter.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/erdal-CTS10-240.feature" />
+      <option name="GLUE" value="com.ctissolutions.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CTIS_EU10" />
-      <option name="NAME_FILTER" value="^User should be able to see default filters as$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User should be able to see default filters as$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User should be able to see default filters as" />
+      <option name="NAME_FILTER" value="^Add mentions$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add mentions$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add mentions" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -125,15 +117,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Add tag" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/erdal-CTS10-240.feature" />
       <option name="GLUE" value="com.ctissolutions.step_definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CTIS_EU10" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
+      <option name="NAME_FILTER" value="^Add tag$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add tag$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add tag" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Remove tags" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/erdal-CTS10-240.feature" />
+      <option name="GLUE" value="com.ctissolutions.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CTIS_EU10" />
+      <option name="NAME_FILTER" value="^Remove tags$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Remove tags$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Remove tags" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -160,28 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FailedTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CTIS_EU10" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ctissolutions.runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ctissolutions.runners" />
-      <option name="MAIN_CLASS_NAME" value="com.ctissolutions.runners.FailedTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="JUnit.FailedTestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: User should be able to see default filters as" />
-        <item itemvalue="Cucumber Java.Scenario: User should be able to reset filters to default" />
-        <item itemvalue="Cucumber Java.Scenario: " />
+        <item itemvalue="Cucumber Java.Scenario: Remove tags" />
+        <item itemvalue="Cucumber Java.Scenario: Add tag" />
+        <item itemvalue="Cucumber Java.Scenario: Add mentions" />
+        <item itemvalue="Cucumber Java.Scenario: Add link" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +204,10 @@
       <workItem from="1679607608706" duration="3756000" />
       <workItem from="1679650622333" duration="3027000" />
       <workItem from="1679657693791" duration="938000" />
+      <workItem from="1679864124890" duration="4314000" />
+      <workItem from="1679917720422" duration="4689000" />
+      <workItem from="1680006126833" duration="735000" />
+      <workItem from="1680006871900" duration="10417000" />
     </task>
     <task id="LOCAL-00001" summary="First project started">
       <created>1678483094131</created>
@@ -250,33 +251,33 @@
       <option name="project" value="LOCAL" />
       <updated>1679334521675</updated>
     </task>
-    <task id="LOCAL-00007" summary="AC 8 feature created">
-      <created>1680258417644</created>
+    <task id="LOCAL-00007" summary="Hook class added updated">
+      <created>1680031299340</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1680258417646</updated>
+      <updated>1680031299340</updated>
     </task>
-    <task id="LOCAL-00008" summary="located new element by Pinar">
-      <created>1680258551589</created>
+    <task id="LOCAL-00008" summary="Event page &amp; event step added">
+      <created>1680031719108</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1680258551589</updated>
+      <updated>1680031719108</updated>
     </task>
-    <task id="LOCAL-00009" summary="AC8 feature steps defined">
-      <created>1680258588961</created>
+    <task id="LOCAL-00009" summary="Event page &amp; event step added-erdal">
+      <created>1680207699555</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1680258588961</updated>
+      <updated>1680207699555</updated>
     </task>
-    <task id="LOCAL-00010" summary="pnr">
-      <created>1680258631317</created>
+    <task id="LOCAL-00010" summary="I fixed bugs-2">
+      <created>1680282418302</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1680258631317</updated>
+      <updated>1680282418302</updated>
     </task>
     <option name="localTasksCounter" value="11" />
     <servers />
@@ -285,37 +286,11 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
           <value>
             <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="HEAD" />
@@ -326,12 +301,16 @@
                   <option value="origin/master" />
                 </option>
               </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/pınar" />
-                </option>
-              </RecentGroup>
             </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
           </value>
         </entry>
       </map>
@@ -341,13 +320,11 @@
     <MESSAGE value="First project started" />
     <MESSAGE value="First project is started. &#10;Show must go on." />
     <MESSAGE value="Hook class added" />
-    <MESSAGE value="Hook class added updated" />
     <MESSAGE value="SearchBox_Pinar pages created" />
-    <MESSAGE value="AC 8 feature created" />
-    <MESSAGE value="located new element by Pınar" />
-    <MESSAGE value="located new element by Pinar" />
-    <MESSAGE value="AC8 feature steps defined" />
-    <MESSAGE value="pnr" />
-    <option name="LAST_COMMIT_MESSAGE" value="pnr" />
+    <MESSAGE value="Hook class added updated" />
+    <MESSAGE value="Event page &amp; event step added" />
+    <MESSAGE value="Event page &amp; event step added-erdal" />
+    <MESSAGE value="I fixed bugs-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="I fixed bugs-2" />
   </component>
 </project>
