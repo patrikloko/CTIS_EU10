@@ -55,27 +55,22 @@ public class EventStep {
 
     @When("user should add starting date")
     public void user_should_add_starting_date() {
-        eventPageArmel.startDateBox.clear();
-        eventPageArmel.startDateBox.sendKeys("20/03/2023");
+       eventPageArmel.addStartDate();
     }
     @When("user should add starting time")
     public void user_should_add_starting_time() {
-        eventPageArmel.startTimeBox.click();
-        eventPageArmel.startTimeBox.clear();
-        eventPageArmel.startTimeBox.sendKeys("09:30 am");
+        eventPageArmel.addStartTime();
+
     }
     @When("user should add ending date")
     public void user_should_add_ending_date() {
-        eventPageArmel.endDateBox.clear();
-        eventPageArmel.endDateBox.sendKeys("");
+        eventPageArmel.addEndDate();
 
     }
     @Then("user should add ending time")
     public void user_should_add_ending_time() throws InterruptedException {
-        eventPageArmel.endTimeBox.click();
-        eventPageArmel.endTimeBox.clear();
-        eventPageArmel.endTimeBox.sendKeys("10:30 am");
-        Thread.sleep(2000);
+        eventPageArmel.addEndTime();
+
     }
 
     @Then("user should select all day")
@@ -87,31 +82,22 @@ public class EventStep {
 
     @When("user should set reminder")
     public void user_should_set_reminder() {
-
         Assert.assertTrue(eventPageArmel.setReminderCheckbox.isSelected());
     }
 
     @Then("user should set reminder time")
     public void user_should_set_reminder_time() throws InterruptedException {
-        eventPageArmel.setTimeReminder.clear();
-        eventPageArmel.setTimeReminder.sendKeys("1");
-        eventPageArmel.setTimeReminderDropdown.click();
-
-        Select selectTimeReminder = new Select(eventPageArmel.setTimeReminderDropdown);
-        selectTimeReminder.selectByIndex(1);
-        Thread.sleep(3000);
+       eventPageArmel.addReminder();
 
     }
 
     @When("user should add event name")
     public void user_should_add_event_name() {
-
         eventPageArmel.eventNameField.sendKeys("Event 1");
     }
 
     @When("user should click send button")
     public void user_should_click_send_button() {
-
         eventPageArmel.sendButton.click();
     }
 

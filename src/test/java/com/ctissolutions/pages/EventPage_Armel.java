@@ -7,11 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class EventPage_Armel {
 
@@ -26,6 +28,21 @@ public class EventPage_Armel {
 
     @FindBy (xpath = "//span[.='Event']//span")
     public WebElement eventButton;
+
+    @FindBy (xpath = "//div[@class='bx-calendar-cell-block']//div[4]")
+    public WebElement activeDateOfTheMonth;
+
+    @FindBy (xpath = "//div[@class='bx-calendar-cell-block']")
+    public WebElement calendarCellBlock;
+
+    @FindBy (className = "bx-calendar-top-month")
+    public WebElement monthsDropdownButton;
+
+    @FindBy (xpath = "//div[@class='bx-calendar-month-content']")
+    public WebElement monthsDropdown;
+
+    @FindBy (xpath = "//input[@class='bx-calendar-year-input']")
+    public WebElement yearInput;
 
 
     @FindBy (xpath = "//input[@id = 'feed-cal-event-fromcal_3Jcl']")
@@ -70,10 +87,67 @@ public class EventPage_Armel {
     @FindBy (xpath = "//a[@class='bx-calendar-cell bx-calendar-active']")
     public WebElement calendarEndingDate;
 
+    public void addStartDate(){
+        String startDate = "20/03/2023";
+        startDateBox.clear();
+        startDateBox.sendKeys(startDate);
+        String afterAssignStartDate = startDateBox.getAttribute("value");
+        System.out.println("Event starting date = "+ afterAssignStartDate);
+
+        Assert.assertEquals(startDate,afterAssignStartDate);
+
+    }
+
+    public void addEndDate(){
+        String endDate = "30/03/2023";
+        endDateBox.clear();
+        endDateBox.sendKeys(endDate);
+        String afterAssignEndDate = endDateBox.getAttribute("value");
+        System.out.println("Event ending date = " +afterAssignEndDate);
+
+        Assert.assertEquals(endDate,afterAssignEndDate);
+    }
+
+    public void addReminder() throws InterruptedException {
+        setTimeReminder.clear();
+        setTimeReminder.sendKeys("1");
+        setTimeReminderDropdown.click();
+
+        Select selectTimeReminder = new Select(setTimeReminderDropdown);
+        selectTimeReminder.selectByIndex(1);
+        Thread.sleep(3000);
+    }
+
+    public void addStartTime(){
+       startTimeBox.click();
+       startTimeBox.clear();
+       startTimeBox.sendKeys("09:30 am");
+
+    }
+
+    public void addEndTime(){
+       endTimeBox.click();
+       endTimeBox.clear();
+       endTimeBox.sendKeys("10:30 am");
+
+
+    }
+
+
+
     public void verifyStartandEndDate() throws InterruptedException {
-
-
         Date todaysDate = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        String expectedDate = dateFormat.format(todaysDate);
+        String actualStartDate = startDateBox.getAttribute("value");
+        String actualEndDate = endDateBox.getAttribute("value");
+        Thread.sleep(3000);
+
+        Assert.assertEquals(expectedDate,actualStartDate);
+        Assert.assertEquals(expectedDate,actualEndDate);
+
+
+        /*Date todaysDate = new Date();
         WebElement actualStartDateEle = startDateBox;
         WebElement actualEndDateEle = endDateBox;
 
@@ -81,13 +155,14 @@ public class EventPage_Armel {
         actualStartDateEle.click();
         Thread.sleep(1000);
         String activeStartDayTs = calendarStartingDate.getAttribute("data-date");
+        System.out.println(activeStartDayTs);
         //Thread.sleep(1000);
-        long convertedStartLongTs = Long.parseLong(activeStartDayTs);
+        long convertedStartLongTs = Long.parseLong(activeStartDayTs);//converting String to long
 
-        Timestamp starDateTs=new Timestamp(convertedStartLongTs);
-        Date convertedStartDate =starDateTs;
+        Timestamp starDateTs=new Timestamp(convertedStartLongTs);//make new object for time stamp
+        Date convertedStartDate =starDateTs;//convert from time stamp to date and time
         DateFormat startDateFormat = new SimpleDateFormat("MM/dd/yyyy");
-        String actualStartDate = startDateFormat.format(convertedStartDate);
+        String actualStartDate = startDateFormat.format(convertedStartDate); //change date format
         System.out.println("actualStartDate = " + actualStartDate);
 
         String expectedDate = startDateFormat.format(todaysDate);
@@ -109,6 +184,7 @@ public class EventPage_Armel {
         Assert.assertEquals(expectedDate, actualEndDate);
 
 
-    }
+    }*/
 
+    }
 }

@@ -15,7 +15,7 @@ import org.junit.runner.*;
       features = "src/test/resources/features",
         glue = "com/ctissolutions/step_definitions",
         dryRun = false,
-        tags = "@CTS10-264",
+        tags = "@this",
         publish = false
 
 )
